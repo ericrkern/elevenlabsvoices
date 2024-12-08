@@ -40,6 +40,7 @@ These scripts were developed to provide a text to voice button within Grid 3 tha
   - npm (Node Package Manager)
   - elevenlabs-js
   - git
+  - MPV (https://mpv.io) and ffmpeg (https://ffmpeg.org) 
   
   ### Installation
   
@@ -56,9 +57,20 @@ These scripts were developed to provide a text to voice button within Grid 3 tha
      npm install elevenlabs
      ```
   
-  3. Create a new button in Grid 3
+  3. Download the MPV or ffmpeg code
      ```bash
-     Steps for creating a new button here...
+     copy the 'ffplay.exe' file into the elevenlabsvoices directory
+     ```
+  
+  4. Create a new button in Grid 3
+     ```bash
+     Open Grid 3 keyboard app
+     From the menu select 'edit grid'
+     Select an empty grid space and select 'create cell'
+     Add command 'copy to clipboard'
+     Add command 'start program'; select 'Windows Power Shell'
+     Add Arguments '& "path to voice.ps1"'
+     Select 'finish editing'
      ```
   
   ### Configuring your voice
