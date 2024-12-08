@@ -7,9 +7,9 @@ if (-not $clipboardContent) {
 }
 
 # Set the local path to ffplay
-$Env:PATH += "C:\Program Files\nodejs\;C:\Users\ericr\Documents\work\smf_projects\elevenlabsvoices\"
+$Env:PATH += ";$PSScriptRoot"
 
 # Run the javascript
-& "C:\Program Files\nodejs\node.exe" "C:\Users\ericr\Documents\work\smf_projects\elevenlabsvoices\elevenlabsvoices.js" $clipboardContent
+& "C:\Program Files\nodejs\node.exe" "$PSScriptRoot\elevenlabsvoices.js" $clipboardContent
 
 #Read-Host -Prompt "Press enter to close"
